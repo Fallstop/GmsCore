@@ -40,7 +40,11 @@ android {
         versionName version
         minSdkVersion androidMinSdk
         targetSdkVersion androidTargetSdk
-        buildConfigField "String", "ICHNAEA_USER_AGENT", "\"microG/${version}\""
+        buildConfigField "String", "ICHNAEA_KEY", "\"${localProperties.get("ichnaea.key", "")}\""
+
+        manifestPlaceholders = [
+                basePackageName: "$basePackageName"
+        ]
     }
 
     sourceSets {
