@@ -138,9 +138,8 @@ android {
         buildConfigField "String", "RECAPTCHA_ENTERPRISE_API_KEY", "\"${localProperties.get("recaptchaEnterpreise.apiKey", "")}\""
         buildConfigField "String", "BASE_PACKAGE_NAME", "\"$basePackageName\""
 
-        manifestPlaceholders = [
-                basePackageName: "$basePackageName"
-        ]
+        // Merge instead of overwrite so appLabel stays defined
+        manifestPlaceholders += [basePackageName: "$basePackageName"]
 
         resValue "string", "base_package_name", "$basePackageName"
         resValue "string", "application_id", "$applicationId"

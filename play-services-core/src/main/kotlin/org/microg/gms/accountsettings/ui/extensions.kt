@@ -16,6 +16,7 @@ const val ACTION_MY_ACCOUNT = BuildConfig.BASE_PACKAGE_NAME + ".android.gms.acco
 const val ACTION_ACCOUNT_PREFERENCES_SETTINGS = BuildConfig.BASE_PACKAGE_NAME + ".android.gms.accountsettings.ACCOUNT_PREFERENCES_SETTINGS"
 const val ACTION_PRIVACY_SETTINGS = BuildConfig.BASE_PACKAGE_NAME + ".android.gms.accountsettings.PRIVACY_SETTINGS"
 const val ACTION_SECURITY_SETTINGS = BuildConfig.BASE_PACKAGE_NAME + ".android.gms.accountsettings.SECURITY_SETTINGS"
+const val ACTION_LOCATION_SHARING = "com.google.android.gms.location.settings.LOCATION_SHARING"
 
 const val EXTRA_CALLING_PACKAGE_NAME = "extra.callingPackageName"
 const val EXTRA_IGNORE_ACCOUNT = "extra.ignoreAccount"
